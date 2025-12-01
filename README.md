@@ -19,8 +19,3 @@ Check pinned repositories below ⬇️
 2. Self-Healing Research System
 3. Multi-Agent Code Review
 4. Business Insights Agent
-### **Each Repo README Should Have:**
-- 🏗️ Architecture diagram (even a simple one)
-- 📊 Performance metrics table
-- 🚀 Quick start guide (how to run it)
-- 📝 Technical decisions & tradeoffs
