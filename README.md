@@ -4,7 +4,7 @@
 Building production-grade AI systems with correctness-first engineering discipline.
 
 ## 🔬 Current Focus
-- RLHF & Reward Modeling for LLM Alignment
+- RLHF & Reward Modeling for LLM Safety & Alignment
 - Fault-tolerant Multi-Agent Systems
 - Distributed AI Infrastructure
 
