@@ -17,6 +17,6 @@ I build reward models and evaluation systems for LLM reasoning, with a focus on 
 Python, C++, PyTorch, Transformers, Accelerate/DDP, LoRA/QLoRA, DPO, RLVR, LangGraph, FastAPI, Docker, AWS, GCP
 
 ## Also
-Top 10% Facebook HackerCup 2022 · 1,500+ Codeforces problems · 🤗 [LossFunctionLover](https://huggingface.co/LossFunctionLover)
+Top 10% Facebook HackerCup 2022 · 1,500+ Codeforces problems 
 
-📧 akleshmishra7@gmail.com · [LinkedIn](https://linkedin.com/in/akleshmishra) · [Website](<YOUR_NETLIFY_URL>)
+📧 akleshmishra7@gmail.com · [LinkedIn](https://linkedin.com/in/akleshmishra) · 🤗 [Hugging Face](https://huggingface.co/LossFunctionLover)
