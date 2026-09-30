@@ -1,20 +1,22 @@
 # Aklesh Mishra
-**Machine Learning Engineer | LLM Systems & AI Infrastructure**
+**ML Research Engineer — Reward Modeling, LLM Evaluation & Alignment**
 
-Building production-grade AI systems with correctness-first engineering discipline.
+I build reward models and evaluation systems for LLM reasoning, with a focus on reliable oversight signals.
 
-## 🔬 Current Focus
-- RLHF & Reward Modeling for LLM Safety & Alignment
-- Fault-tolerant Multi-Agent Systems
-- Distributed AI Infrastructure
+## Research
+- **Stable Outcome Reward Modeling via Pairwise Preference Learning** — pointwise ORMs collapsed to AUC ~0.5; pairwise training reached **96.3%** held-out pairwise accuracy (90% CI [95.3, 97.1]), anti-symmetry r = −0.998. [Paper](<PAPER_PDF_URL>) · [Code](https://github.com/Coder-12/stable-outcome-reward-modeling) · [Model](https://huggingface.co/LossFunctionLover/pairwise-orm-model) · [Dataset](https://huggingface.co/datasets/LossFunctionLover/orm-pairwise-preference-pairs)
+- **Ongoing:** matched implicit process evaluators — single-score vs pairwise step scoring under frozen optimization pressure (scalable oversight).
 
-## 🛠️ Tech Stack
-**ML/AI:** PyTorch, LLMs (GPT/Claude/Mistral), RLHF, Transformers, RAG  
-**Infrastructure:** Docker, Kubernetes, FastAPI, AWS, GCP  
-**Systems:** Python, C++, Distributed Systems, Async Programming
+## Systems
+- **[MAGI-RM](https://github.com/Coder-12/magi-rm)** — dual-head ORM + PRM (OPT-1.3B), DDP/Accelerate, activation checkpointing, OOM recovery.
+- **[Nexus RAG](https://github.com/Coder-12/nexus-rag)** — hybrid retrieval (BM25 + dense + RRF) + reranking; **93% Precision@3**, 55-question eval suite.
+- **[MARCS](https://github.com/Coder-12/MARCS)** — multi-agent code review with journaled, crash-safe patching; 250 annotated PRs, **88% precision**.
+- **[SERA](https://github.com/Coder-12/SERA)** — research-agent ingestion pipeline: async arXiv retrieval, resumable downloads, end-to-end tests.
 
-## 📫 Contact
-📧 akleshmishra7@gmail.com | 💼 [LinkedIn](https://linkedin.com/in/akleshmishra)
+## Stack
+Python, C++, PyTorch, Transformers, Accelerate/DDP, LoRA/QLoRA, DPO, RLVR, LangGraph, FastAPI, Docker, AWS, GCP
 
-## 🌟 Featured Projects
-Check pinned repositories below ⬇️
+## Also
+Top 10% Facebook HackerCup 2022 · 1,500+ Codeforces problems · 🤗 [LossFunctionLover](https://huggingface.co/LossFunctionLover)
+
+📧 akleshmishra7@gmail.com · [LinkedIn](https://linkedin.com/in/akleshmishra) · [Website](<YOUR_NETLIFY_URL>)
