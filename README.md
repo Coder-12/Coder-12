@@ -4,7 +4,7 @@
 I build reward models and evaluation systems for LLM reasoning, with a focus on reliable oversight signals.
 
 ## Research
-- **Stable Outcome Reward Modeling via Pairwise Preference Learning** — pointwise ORMs collapsed to AUC ~0.5; pairwise training reached **96.3%** held-out pairwise accuracy (90% CI [95.3, 97.1]), anti-symmetry r = −0.998. [Paper](https://reward-model-paper.netlify.app/Stable_Outcome_Reward_Modeling_Pairwise_ORM.pdf) · [Code](https://github.com/Coder-12/stable-outcome-reward-modeling) · [Model](https://huggingface.co/LossFunctionLover/pairwise-orm-model) · [Dataset](https://huggingface.co/datasets/LossFunctionLover/orm-pairwise-preference-pairs)
+- **Stable Outcome Reward Modeling via Pairwise Preference Learning** — pointwise ORMs collapsed to AUC ~0.5; pairwise training reached **96.3%** held-out pairwise accuracy (90% CI [95.3, 97.1]), anti-symmetry r = −0.998. [Paper](https://github.com/Coder-12/stable-outcome-reward-modeling/blob/main/paper/Stable_Outcome_Reward_Modeling_Pairwise_ORM.pdf) · [Code](https://github.com/Coder-12/stable-outcome-reward-modeling) · [Model](https://huggingface.co/LossFunctionLover/pairwise-orm-model) · [Dataset](https://huggingface.co/datasets/LossFunctionLover/orm-pairwise-preference-pairs)
 - **Ongoing:** matched implicit process evaluators — single-score vs pairwise step scoring under frozen optimization pressure (scalable oversight).
 
 ## Systems
