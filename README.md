@@ -1,22 +1,25 @@
 # Aklesh Mishra
-**ML Research Engineer — Reward Modeling, LLM Evaluation & Alignment**
 
-I build reward models and evaluation systems for LLM reasoning, with a focus on reliable oversight signals.
+**Research Engineer | LLM Post-Training, Evaluation & Reliable Agent Systems**
 
-## Research
-- **Stable Outcome Reward Modeling via Pairwise Preference Learning** — pointwise ORMs collapsed to AUC ~0.5; pairwise training reached **96.3%** held-out pairwise accuracy (90% CI [95.3, 97.1]), anti-symmetry r = −0.998. [Paper](https://github.com/Coder-12/stable-outcome-reward-modeling/blob/main/paper/Stable_Outcome_Reward_Modeling_Pairwise_ORM.pdf) · [Code](https://github.com/Coder-12/stable-outcome-reward-modeling) · [Model](https://huggingface.co/LossFunctionLover/pairwise-orm-model) · [Dataset](https://huggingface.co/datasets/LossFunctionLover/orm-pairwise-preference-pairs)
-- **Ongoing:** matched implicit process evaluators — single-score vs pairwise step scoring under frozen optimization pressure (scalable oversight).
+I work at the intersection of **reward modeling, reasoning-model evaluation, verifiable post-training, and agentic AI engineering**. My projects emphasize reproducible experiments, trustworthy feedback signals, controlled baselines, and failure analysis—not just headline benchmark scores.
 
-## Systems
-- **[MAGI-RM](https://github.com/Coder-12/magi-rm)** — dual-head ORM + PRM reward model (shared encoder), DDP/Accelerate, gradient checkpointing, OOM recovery; 5.8K labeled GSM8K-derived chains with QC reports.
-- **[Nexus RAG](https://github.com/Coder-12/nexus-rag)** ([live demo](https://nexus-rag.streamlit.app/)) — deployed agentic RAG: hybrid retrieval (BM25 + dense + RRF) + reranking, cited answers, out-of-scope refusal. LLM-judge eval: **92.7%** of answers ≥4/5 on a 55-question regression set; stress-set flagged hallucinations cut **9.2% → 1.5%**.
-- **[MARCS](https://github.com/Coder-12/MARCS)** — multi-agent code review: FastAPI + Docker service, journaled patching with rollback/resume, golden-set eval harness, 79 test modules.
-- **[SERA](https://github.com/Coder-12/SERA)** — research-agent ingestion pipeline: async arXiv retrieval, resumable downloads, end-to-end tests.
+## Selected research
 
-## Stack
-Python, C++, PyTorch, Transformers, Accelerate/DDP, LoRA/QLoRA, DPO, RLVR, LangGraph, FastAPI, Docker, AWS, GCP
+- **[Stable Outcome Reward Modeling via Pairwise Preference Learning](https://github.com/Coder-12/stable-outcome-reward-modeling)** — Studied pointwise reward-model instability and pairwise outcome supervision. Reported **96.3% held-out pairwise accuracy** (90% bootstrap CI: 95.3–97.1%) within the project's evaluation setup. [Preprint](https://github.com/Coder-12/stable-outcome-reward-modeling/blob/main/paper/Stable_Outcome_Reward_Modeling_Pairwise_ORM.pdf) · [Model](https://huggingface.co/LossFunctionLover/pairwise-orm-model) · [Dataset](https://huggingface.co/datasets/LossFunctionLover/orm-pairwise-preference-pairs)
+- **[Verifiable Agentic RL Lab](https://github.com/Coder-12/verifiable-agentic-rl-lab)** — Built a strict symbolic verifier and evaluated a small reasoning model using sampling, LoRA, and GRPO. On 200 frozen Countdown tasks, untouched-model greedy success was **4.5%**, versus **23.0% best-of-8 verifier selection** (an inference-time comparison). Controlled RLVR runs **did not establish reliable held-out correctness gains**; the negative result and limitations are documented.
+- **[MAGI-RM](https://github.com/Coder-12/magi-rm)** — Experimental shared-encoder outcome/process reward-model pipeline with training utilities, labeled reasoning-chain data, and quality-control tooling. Trained-model performance is not yet established in the public repository.
 
-## Also
-Top 10% Facebook HackerCup 2022 · 1,500+ Codeforces problems 
+## Agentic and LLM systems
 
-📧 akleshmishra7@gmail.com · [LinkedIn](https://linkedin.com/in/akleshmishra) · 🤗 [Hugging Face](https://huggingface.co/LossFunctionLover)
+- **[Nexus RAG](https://github.com/Coder-12/nexus-rag)** — Domain-specific retrieval-augmented question answering with dense + BM25 retrieval, reranking, citations, refusal handling, and evaluation workflows.
+- **[MARCS](https://github.com/Coder-12/MARCS)** — Research prototype for LLM-assisted code review, journaled patch application, recovery, safety checks, and traceable reports; not presented as production-hardened.
+- **[SERA](https://github.com/Coder-12/SERA)** — Research-paper ingestion pipeline with arXiv retrieval, PDF processing, embeddings, and metadata storage.
+
+**Current direction:** execution-verified Python code repair and agent training, starting with authentic-task feasibility and independent verification; supervised adaptation and RL are conditional on evidence.
+
+**Technical focus:** Python · PyTorch · Transformers / PEFT / TRL · LoRA / GRPO · LLM evaluation · RAG / retrieval · FastAPI · Docker
+
+**Interested in:** research engineering and applied AI engineering roles spanning LLM evaluation, alignment/post-training, and reliable agents.
+
+[LinkedIn](https://linkedin.com/in/akleshmishra) · [Hugging Face](https://huggingface.co/LossFunctionLover) · **Email:** akleshmishra7@gmail.com
