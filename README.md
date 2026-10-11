@@ -8,9 +8,9 @@ I build reward models and evaluation systems for LLM reasoning, with a focus on 
 - **Ongoing:** matched implicit process evaluators — single-score vs pairwise step scoring under frozen optimization pressure (scalable oversight).
 
 ## Systems
-- **[MAGI-RM](https://github.com/Coder-12/magi-rm)** — dual-head ORM + PRM (OPT-1.3B), DDP/Accelerate, activation checkpointing, OOM recovery.
-- **[Nexus RAG](https://github.com/Coder-12/nexus-rag)** — hybrid retrieval (BM25 + dense + RRF) + reranking; **93% Precision@3**, 55-question eval suite.
-- **[MARCS](https://github.com/Coder-12/MARCS)** — multi-agent code review with journaled, crash-safe patching; 250 annotated PRs, **88% precision**.
+- **[MAGI-RM](https://github.com/Coder-12/magi-rm)** — dual-head ORM + PRM reward model (shared encoder), DDP/Accelerate, gradient checkpointing, OOM recovery; 5.8K labeled GSM8K-derived chains with QC reports.
+- **[Nexus RAG](https://github.com/Coder-12/nexus-rag)** ([live demo](https://nexus-rag.streamlit.app/)) — deployed agentic RAG: hybrid retrieval (BM25 + dense + RRF) + reranking, cited answers, out-of-scope refusal. LLM-judge eval: **92.7%** of answers ≥4/5 on a 55-question regression set; stress-set flagged hallucinations cut **9.2% → 1.5%**.
+- **[MARCS](https://github.com/Coder-12/MARCS)** — multi-agent code review: FastAPI + Docker service, journaled patching with rollback/resume, golden-set eval harness, 79 test modules.
 - **[SERA](https://github.com/Coder-12/SERA)** — research-agent ingestion pipeline: async arXiv retrieval, resumable downloads, end-to-end tests.
 
 ## Stack
